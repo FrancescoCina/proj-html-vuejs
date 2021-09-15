@@ -126,6 +126,43 @@
         </div>
       </div>
     </section>
+    <section id="latest-work">
+      <div class="container">
+        <!-- Row for title -->
+        <div class="row justify-content-between">
+          <div class="col-4 section-title mt-4">
+            <p class="light-grey">Portfolio</p>
+            <h4><strong>latest</strong> work</h4>
+          </div>
+          <div
+            class="
+              col-4
+              arrow-buttons
+              d-flex
+              mt-4
+              align-items-center
+              justify-content-end
+            "
+          >
+            <i class="fs-3 fas fa-arrow-circle-left me-3"></i>
+            <i class="fs-3 fas fa-arrow-circle-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Row for Slider -->
+      <div class="row">
+        <div class="col-4">
+          <figure>
+            <div class="img-container"></div>
+          </figure>
+          <figcaption></figcaption>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+      <!-- Row for dots controllers -->
+      <div class="row"></div>
+    </section>
   </main>
 </template>
 
