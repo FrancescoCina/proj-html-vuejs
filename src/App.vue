@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <Header :links="links"></Header>
     <Main></Main>
-    <Footer></Footer>
+    <Footer :links="links"></Footer>
   </div>
 </template>
 
@@ -17,6 +17,36 @@ export default {
     Header,
     Main,
     Footer,
+  },
+  data() {
+    return {
+      links: [
+        {
+          name: "Home",
+          url: "#",
+        },
+        {
+          name: "About",
+          url: "#",
+        },
+        {
+          name: "Services",
+          url: "#",
+        },
+        {
+          name: "Blog",
+          url: "#",
+        },
+        {
+          name: "Contact",
+          url: "#",
+        },
+        {
+          name: "Portfolio",
+          url: "#",
+        },
+      ],
+    };
   },
 };
 </script>

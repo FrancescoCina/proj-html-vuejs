@@ -1,0 +1,51 @@
+.gradient-blue {
+    background: rgb(26, 178, 237);
+    background: linear-gradient(
+      90deg,
+      rgba(26, 178, 237, 1) 0%,
+      rgba(30, 64, 132, 1) 95%
+    );
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .gradient-pink {
+    background: rgb(191, 44, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(191, 44, 110, 1) 0%,
+      rgba(244, 90, 103, 1) 95%
+    );
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  
+  
+#start-your-project{
+    height: 680px;
+    background-color: #08134a;
+}
+
+
+.background-men{
+    position: absolute;
+    top:-200px;
+    left:140px
+}
+
+.men-data{
+    position: absolute;
+    top:-160px;
+    left:140px
+}
+
+
+#start-your-project .start-project-img-container{
+    width: 50%;
+    position:relative;
+}
+
+/* .basis-40{
+    flex-basis: 40%;
+} */
