@@ -460,6 +460,34 @@
         </div>
       </div>
     </section>
+    <section id="subscription">
+      <div class="container">
+        <div
+          class="
+            row
+            align-items-center
+            justify-content-between
+            subscription-box
+            gradient-pink
+            p-4
+          "
+        >
+          <div class="col-6">
+            <h3 class="fw-bolder fs-2 white">We Offer Awesome Services</h3>
+            <p class="white">
+              When, while lovely valley teems with vapour around meand meridian
+              sun strikes the upper surface .
+            </p>
+          </div>
+          <div class="col-6">
+            <div class="input-subscription d-flex justify-content-between">
+              <input type="text" placeholder="Enter Your Email Address" />
+              <button type="button" class="btn gradient-blue">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -608,6 +636,27 @@ button.white-back {
   margin: 150px 0;
   .col {
     flex-basis: calc(100% / 5);
+  }
+}
+
+// Sezione Subscription
+
+.subscription-box {
+  height: 150px;
+  border-radius: 20px;
+}
+
+.input-subscription {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 50%;
+  height: 35px;
+  padding: 5px;
+  input {
+    border-color: transparent;
+  }
+  button {
+    border-radius: 20px;
   }
 }
 </style>
