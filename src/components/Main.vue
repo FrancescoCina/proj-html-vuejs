@@ -87,7 +87,7 @@
       </div>
     </section>
     <!-- SEZIONE START YOUR PROJECT -->
-    <section id="start-your-project" class="white">
+    <section id="start-your-project">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-6 pt-10 px-5">
@@ -207,74 +207,141 @@
     </section>
     <!-- SEZIONE OUR PRICING -->
     <section id="our-pricing" class="pt-4">
-      <!-- Row for title -->
-      <div class="row title-price">
-        <div class="col white text-center mb-5">
-          <p class="pink-p"><strong>Price List</strong></p>
-          <h4 class="fs-2"><strong>Our</strong> Pricing</h4>
+      <div class="container-fluid">
+        <!-- Row for title -->
+        <div class="row title-price">
+          <div class="col text-center mb-5">
+            <p class="pink-p"><strong>Price List</strong></p>
+            <h4 class="fs-2"><strong>Our</strong> Pricing</h4>
+            <p>
+              When, while the lovely valley teems with vapour around meand the
+              meridian sun strikes the upper surface .
+            </p>
+          </div>
+        </div>
+        <!-- Row for price details -->
+        <div class="row justify-content-center card-price">
+          <div class="col-3">
+            <div class="card text-center p-5">
+              <h3><strong>Designing</strong></h3>
+              <p>PROCESS</p>
+              <p>$</p>
+              <p class="h1">40</p>
+              <p>Per Month</p>
+              <p><strong>Creative</strong> Design Enabled</p>
+              <p><strong>Vibrant </strong>Color Usage</p>
+              <p><strong>Eye</strong> Catching Design</p>
+              <p><strong>Extreme </strong>Typography</p>
+              <p><strong>Exceptional</strong> Design</p>
+              <div class="btn-container d-flex justify-content-center mt-4">
+                <button type="button" class="btn pink-button">
+                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card pink-card white text-center p-5">
+              <h3><strong>Developing</strong></h3>
+              <p>PRODUCT</p>
+              <p>$</p>
+              <p class="h1">60</p>
+              <p>Per Month</p>
+              <p><strong>Creative</strong> Design Enabled</p>
+              <p><strong>Vibrant </strong>Color Usage</p>
+              <p><strong>Eye</strong> Catching Design</p>
+              <p><strong>Extreme </strong>Typography</p>
+              <p><strong>Exceptional</strong> Design</p>
+              <div class="btn-container d-flex justify-content-center mt-4">
+                <button type="button" class="btn white-back">
+                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card text-center p-5">
+              <h3><strong>Supporting</strong></h3>
+              <p>CLIENTS</p>
+              <p>$</p>
+              <p class="h1">80</p>
+              <p>Per Month</p>
+              <p><strong>Creative</strong> Design Enabled</p>
+              <p><strong>Vibrant </strong>Color Usage</p>
+              <p><strong>Eye</strong> Catching Design</p>
+              <p><strong>Extreme </strong>Typography</p>
+              <p><strong>Exceptional</strong> Design</p>
+              <div class="btn-container d-flex justify-content-center mt-4">
+                <button type="button" class="btn pink-button">
+                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEZIONE LATEST POSTS -->
+    <section id="latest-posts">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <p class="pink-p">Blog</p>
+          <h3><strong>Latest</strong> Posts</h3>
           <p>
             When, while the lovely valley teems with vapour around meand the
             meridian sun strikes the upper surface .
           </p>
         </div>
-      </div>
-      <!-- Row for price details -->
-      <div class="row justify-content-center card-price">
-        <div class="col-3">
-          <div class="card text-center p-5">
-            <h3><strong>Designing</strong></h3>
-            <p>PROCESS</p>
-            <p>$</p>
-            <p class="h1">40</p>
-            <p>Per Month</p>
-            <p><strong>Creative</strong> Design Enabled</p>
-            <p><strong>Vibrant </strong>Color Usage</p>
-            <p><strong>Eye</strong> Catching Design</p>
-            <p><strong>Extreme </strong>Typography</p>
-            <p><strong>Exceptional</strong> Design</p>
-            <div class="btn-container d-flex justify-content-center mt-4">
-              <button type="button" class="btn pink-button">
-                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+        <div class="row">
+          <div class="col-5 white main-post h-350">
+            <div class="layover d-flex align-items-end p-5">
+              <div class="article-preview">
+                <div class="post-details my-2">
+                  <time>April 21, 2019</time>
+                  <span> &bull; <author>By Paul</author></span>
+                </div>
+                <h5 class="my-2">
+                  Amazon gets CCI not to acquire 49% stake in
+                </h5>
+                <p class="my-2">
+                  When, while the lovely valley teems with vapor around me, and
+                  the meridiana sun s...
+                </p>
+              </div>
+              <button type="button" class="btn white-back mt-5 w-100p">
+                Read More
               </button>
             </div>
           </div>
-        </div>
-        <div class="col-3">
-          <div class="card pink-card white text-center p-5">
-            <h3><strong>Developing</strong></h3>
-            <p>PRODUCT</p>
-            <p>$</p>
-            <p class="h1">60</p>
-            <p>Per Month</p>
-            <p><strong>Creative</strong> Design Enabled</p>
-            <p><strong>Vibrant </strong>Color Usage</p>
-            <p><strong>Eye</strong> Catching Design</p>
-            <p><strong>Extreme </strong>Typography</p>
-            <p><strong>Exceptional</strong> Design</p>
-            <div class="btn-container d-flex justify-content-center mt-4">
-              <button type="button" class="btn white-back">
-                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
-              </button>
+
+          <div class="col-3 mx-5 secondary-post p-4 h-350">
+            <div class="post-details my-5">
+              <time>April 21, 2019</time>
+              <span> &bull; <author>By Paul</author></span>
             </div>
+            <h5 class="my-5">
+              Clearting Corporations get SEBI not to invest in overnight funds
+            </h5>
+            <p class="my-5">
+              When, while the lovely valley teems with vapor around me, and the
+              meridiana sun s...
+            </p>
+            <button type="button" class="btn white-back mt-5">Read More</button>
           </div>
-        </div>
-        <div class="col-3">
-          <div class="card text-center p-5">
-            <h3><strong>Supporting</strong></h3>
-            <p>CLIENTS</p>
-            <p>$</p>
-            <p class="h1">80</p>
-            <p>Per Month</p>
-            <p><strong>Creative</strong> Design Enabled</p>
-            <p><strong>Vibrant </strong>Color Usage</p>
-            <p><strong>Eye</strong> Catching Design</p>
-            <p><strong>Extreme </strong>Typography</p>
-            <p><strong>Exceptional</strong> Design</p>
-            <div class="btn-container d-flex justify-content-center mt-4">
-              <button type="button" class="btn pink-button">
-                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
-              </button>
+          <div class="col-3 secondary-post p-4 h-350">
+            <div class="post-details my-5">
+              <time>April 21, 2019</time>
+              <span> &bull; <author>By Paul</author></span>
             </div>
+            <h5 class="my-5">
+              Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away
+              in London
+            </h5>
+            <p class="my-5">
+              When, while the lovely valley teems with vapor around me, and the
+              meridiana sun s...
+            </p>
+            <button type="button" class="btn white-back mt-5">Read More</button>
           </div>
         </div>
       </div>
@@ -287,5 +354,125 @@ export default {
   name: "Main",
 };
 </script>
-<style scoped lang="sccs">
+<style scoped lang="scss">
+@import "../assets/scss/_vars.scss";
+
+//   Sezione Start your Project
+
+#start-your-project {
+  height: 520px;
+  background-color: $section-background;
+}
+
+.background-men {
+  position: absolute;
+  top: -200px;
+  left: 140px;
+}
+
+.men-data {
+  position: absolute;
+  top: -160px;
+  left: 140px;
+}
+
+#start-your-project .start-project-img-container {
+  width: 50%;
+  position: relative;
+}
+
+// Sezione Latest Work
+#latest-work {
+  height: 650px;
+}
+
+.img-slider {
+  border-radius: 15px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  margin: 3px;
+  background-color: $light-grey;
+  border-radius: 50%;
+}
+
+.dot-active {
+  background-color: $section-background;
+}
+
+.caption {
+  font-size: 10px;
+}
+
+// Sezione Our Pricing
+
+#our-pricing {
+  background-color: $section-background;
+  height: 300px;
+}
+
+.pink-p {
+  color: #fa7178;
+}
+
+#our-pricing .card {
+  height: 450px;
+  border-radius: 20px;
+  border-color: transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#our-pricing button {
+  width: 140px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+button.pink-button {
+  background: rgb(191, 44, 110);
+  background: linear-gradient(
+    180deg,
+    rgba(191, 44, 110, 1) 0%,
+    rgba(244, 90, 103, 1) 95%
+  );
+  border-color: transparent;
+}
+
+button.white-back {
+  background-color: #fff;
+  color: #fa7178;
+}
+
+.pink-card {
+  background: rgb(191, 44, 110);
+  background: linear-gradient(
+    170deg,
+    rgba(191, 44, 110, 1) 0%,
+    rgba(244, 90, 103, 1) 95%
+  );
+}
+
+//  Sezione Latest Posts
+
+#latest-posts {
+  margin-top: 350px;
+  button {
+    border-radius: 10px;
+    color: #000;
+  }
+}
+
+.main-post {
+  background-image: url("../assets/img/headway-537308-unsplash-1380x703.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.secondary-post {
+  border-radius: 20px;
+  background-color: $section-background;
+}
 </style>
