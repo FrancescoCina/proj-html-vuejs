@@ -150,18 +150,57 @@
         </div>
       </div>
       <!-- Row for Slider -->
-      <div class="row">
+      <div class="row justify-content-center m-3">
         <div class="col-4">
-          <figure>
-            <div class="img-container"></div>
+          <figure class="img-slider">
+            <img
+              class="img-fluid"
+              src="@/assets/img/DRY-1-790x576.jpg"
+              alt="Dry Slider"
+            />
           </figure>
-          <figcaption></figcaption>
+          <figcaption class="d-flex justify-content-between">
+            <span class="caption">Purinky Products</span>
+            <span class="light-grey caption">Digital Experience</span>
+          </figcaption>
         </div>
-        <div class="col-4"></div>
-        <div class="col-4"></div>
+        <div class="col-4">
+          <figure class="img-slider">
+            <img
+              class="img-fluid"
+              src="@/assets/img/8wa60okr-1-790x576.jpg"
+              alt="Dry Slider"
+            />
+          </figure>
+          <figcaption class="d-flex justify-content-between">
+            <span class="caption">Basket of Flower on Table</span>
+            <span class="light-grey caption">Branding Strategy</span>
+          </figcaption>
+        </div>
+        <div class="col-4">
+          <figure class="img-slider">
+            <img
+              class="img-fluid"
+              src="@/assets/img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"
+              alt="Dry Slider"
+            />
+          </figure>
+          <figcaption class="d-flex justify-content-between">
+            <span class="caption">Satisfy Poster</span>
+            <span class="light-grey caption">Branding Strategy</span>
+          </figcaption>
+        </div>
       </div>
       <!-- Row for dots controllers -->
-      <div class="row"></div>
+      <div class="row justify-content-center mt-4">
+        <div class="col d-flex justify-content-center">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
     </section>
   </main>
 </template>
