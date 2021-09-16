@@ -314,7 +314,7 @@
             </div>
           </div>
 
-          <div class="col-3 mx-5 secondary-post p-4 h-350">
+          <div class="col-3 secondary-post p-4 h-350">
             <div class="post-details my-5">
               <time>April 21, 2019</time>
               <span> &bull; <author>By Paul</author></span>
@@ -342,6 +342,120 @@
               meridiana sun s...
             </p>
             <button type="button" class="btn white-back mt-5">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEZIONE WHAT PEOPLE SAY -->
+    <section id="people-say">
+      <div class="container">
+        <!-- Row for Title -->
+        <div class="row">
+          <div class="col my-5 text-center">
+            <p class="pink-p">Testimonial</p>
+            <h3><strong>What</strong> People Say</h3>
+            <p>
+              When, while the lovely valley teems with vapour around meand the
+              meridian sun strikes the upper surface .
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3 px-5">
+            <div
+              class="first people-img-container d-flex justify-content-center"
+            >
+              <img
+                class="img-fluid"
+                src="../assets/img/szabo-viktor-1266895-unsplash-1024x1024.png"
+                alt="First Person"
+                First
+                People
+              />
+            </div>
+            <div class="stars my-5">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="caption text-center">
+              <p class="my-5">
+                When, while lovely valley teems with vapour around meand
+                meridian sun strikes the upper impenetrable follage of my trees,
+                and but a thousand.
+              </p>
+              <author class="fw-bold my-3">Michkel Anegl</author>
+              <p>Marketing Management</p>
+            </div>
+          </div>
+          <div class="col-3 mx-3">
+            <div class="second people-img-container">
+              <img
+                class="img-fluid"
+                src="../assets/img/philipe-cavalcante-539505-unsplash-1024x1024.png"
+                alt="Second Person"
+              />
+            </div>
+            <div class="stars my-5">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="caption text-center">
+              <p class="my-5">
+                When, while lovely valley teems with vapour around meand
+                meridian sun strikes the upper impenetrable follage of my trees,
+                and but a thousand.
+              </p>
+              <author class="fw-bold my-3">Michkel Anegl</author>
+              <p>Marketing Management</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="third people-img-container">
+              <img
+                class="img-fluid"
+                src="../assets/img/fabio-spinelli-695744-unsplash-1024x1024.png"
+                alt="Third Person"
+              />
+            </div>
+            <div class="stars my-5">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="caption text-center">
+              <p class="my-5">
+                When, while lovely valley teems with vapour around meand
+                meridian sun strikes the upper impenetrable follage of my trees,
+                and but a thousand.
+              </p>
+              <author class="fw-bold my-3">Michkel Anegl</author>
+              <p>Marketing Management</p>
+            </div>
+          </div>
+        </div>
+        <div id="customers" class="row">
+          <div class="col">
+            <img src="../assets/img/client-1-1.png" alt="Golden Golden" />
+          </div>
+          <div class="col">
+            <img src="../assets/img/clienty-2.png" alt="Sweety Cafeteria" />
+          </div>
+          <div class="col">
+            <img src="../assets/img/clienty-4.png" alt="Fastlane" />
+          </div>
+          <div class="col">
+            <img src="../assets/img/client-5.png" alt="Mighty Furniture" />
+          </div>
+          <div class="col">
+            <img src="../assets/img/clienty-3.png" alt="Jack Roller" />
           </div>
         </div>
       </div>
@@ -474,5 +588,26 @@ button.white-back {
 .secondary-post {
   border-radius: 20px;
   background-color: $section-background;
+}
+
+.people-img-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #b6256f;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.stars {
+  color: #fa7178;
+}
+
+#customers {
+  margin: 150px 0;
+  .col {
+    flex-basis: calc(100% / 5);
+  }
 }
 </style>
