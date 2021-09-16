@@ -8,8 +8,7 @@
     border-radius: 10px;
     color: #fff;
   }
-  
-  .gradient-pink {
+    .gradient-pink {
     background: rgb(191, 44, 110);
     background: linear-gradient(
       90deg,
@@ -19,11 +18,12 @@
     border-radius: 10px;
     color: #fff;
   }
+
   
 //   Sezione Start your Project
   
 #start-your-project{
-    height: 680px;
+    height: 520px;
     background-color: #08134a;
 }
 
@@ -49,7 +49,7 @@
 
 // Sezione Latest Work
 #latest-work {
-    height: 600px;
+    height: 650px;
   }
 
  .img-slider{
@@ -60,10 +60,56 @@
     width: 7px;
     height: 7px;
     margin:3px;
-    background-color: $blu-background;
+    background-color: $light-grey;
     border-radius: 50%;
+}
+
+.dot-active{
+    background-color: $blu-background;
 }
 
 .caption{
     font-size: 10px;
 }
+
+// Sezione Our Pricing
+
+#our-pricing {
+    background-color: $blu-background;
+    height: 300px;
+  }
+
+  .pink-p{
+    color: #fa7178;
+  }
+
+  #our-pricing .card{
+      height: 450px;
+      border-radius: 20px;
+      border-color: transparent;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  #our-pricing button{
+    width: 140px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+  #our-pricing button.pink-button{
+    background: rgb(191,44,110);
+    background: linear-gradient(180deg, rgba(191,44,110,1) 0%, rgba(244,90,103,1) 95%);
+  } 
+  
+  #our-pricing button.white-back{
+      background-color: #fff;
+      color: #fa7178;
+  }
+
+.pink-card{
+    background: rgb(191,44,110);
+    background: linear-gradient(170deg, rgba(191,44,110,1) 0%, rgba(244,90,103,1) 95%);
+}
+
+
+ 

@@ -1,5 +1,6 @@
 <template>
   <main>
+    <!-- SEZIONE WHAT WE DO -->
     <section id="what-we-do">
       <div class="container">
         <!-- Row for Title -->
@@ -85,6 +86,7 @@
         </div>
       </div>
     </section>
+    <!-- SEZIONE START YOUR PROJECT -->
     <section id="start-your-project" class="white">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -126,6 +128,7 @@
         </div>
       </div>
     </section>
+    <!-- SEZIONE LATEST WORK -->
     <section id="latest-work">
       <div class="container">
         <!-- Row for title -->
@@ -192,13 +195,87 @@
         </div>
       </div>
       <!-- Row for dots controllers -->
-      <div class="row justify-content-center mt-4">
+      <div class="row justify-content-center my-4">
         <div class="col d-flex justify-content-center">
+          <div class="dot dot-active"></div>
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
-          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+    <!-- SEZIONE OUR PRICING -->
+    <section id="our-pricing" class="pt-4">
+      <!-- Row for title -->
+      <div class="row title-price">
+        <div class="col white text-center mb-5">
+          <p class="pink-p"><strong>Price List</strong></p>
+          <h4 class="fs-2"><strong>Our</strong> Pricing</h4>
+          <p>
+            When, while the lovely valley teems with vapour around meand the
+            meridian sun strikes the upper surface .
+          </p>
+        </div>
+      </div>
+      <!-- Row for price details -->
+      <div class="row justify-content-center card-price">
+        <div class="col-3">
+          <div class="card text-center p-5">
+            <h3><strong>Designing</strong></h3>
+            <p>PROCESS</p>
+            <p>$</p>
+            <p class="h1">40</p>
+            <p>Per Month</p>
+            <p><strong>Creative</strong> Design Enabled</p>
+            <p><strong>Vibrant </strong>Color Usage</p>
+            <p><strong>Eye</strong> Catching Design</p>
+            <p><strong>Extreme </strong>Typography</p>
+            <p><strong>Exceptional</strong> Design</p>
+            <div class="btn-container d-flex justify-content-center mt-4">
+              <button type="button" class="btn pink-button">
+                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card pink-card white text-center p-5">
+            <h3><strong>Developing</strong></h3>
+            <p>PRODUCT</p>
+            <p>$</p>
+            <p class="h1">60</p>
+            <p>Per Month</p>
+            <p><strong>Creative</strong> Design Enabled</p>
+            <p><strong>Vibrant </strong>Color Usage</p>
+            <p><strong>Eye</strong> Catching Design</p>
+            <p><strong>Extreme </strong>Typography</p>
+            <p><strong>Exceptional</strong> Design</p>
+            <div class="btn-container d-flex justify-content-center mt-4">
+              <button type="button" class="btn white-back">
+                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card text-center p-5">
+            <h3><strong>Supporting</strong></h3>
+            <p>CLIENTS</p>
+            <p>$</p>
+            <p class="h1">80</p>
+            <p>Per Month</p>
+            <p><strong>Creative</strong> Design Enabled</p>
+            <p><strong>Vibrant </strong>Color Usage</p>
+            <p><strong>Eye</strong> Catching Design</p>
+            <p><strong>Extreme </strong>Typography</p>
+            <p><strong>Exceptional</strong> Design</p>
+            <div class="btn-container d-flex justify-content-center mt-4">
+              <button type="button" class="btn pink-button">
+                Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
