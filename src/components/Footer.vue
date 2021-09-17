@@ -1,4 +1,5 @@
 <template>
+  <!-- Invece che utilizzare il colore richiesto in secondo luogo dal committente (#f4f4f4) utilizzato sfondo blu poichè non potevo cambiare il colore del logo -->
   <footer>
     <div class="container">
       <div class="row pt-150p top-footer">

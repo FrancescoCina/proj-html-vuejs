@@ -105,6 +105,7 @@
         </div>
       </div>
       <!-- Row for Slider -->
+      <!-- Avrei potuto gestire anche questa sezione con componenti, ma non ho avuto tempo -->
       <div class="row justify-content-center m-3">
         <div class="col-4 clickable">
           <div class="sliders-elements-container h-100">
@@ -200,6 +201,7 @@
           </p>
         </div>
         <div class="row">
+          <!-- Row per i posts -->
           <div class="col-5 white main-post h-350">
             <div class="layover d-flex align-items-end p-5">
               <div class="article-preview">
@@ -243,6 +245,9 @@
             </p>
           </div>
         </div>
+        <!-- Row per le immagini e recensioni delle persone -->
+        <!-- Avrei potuto gestire anche questa sezione con componenti, ma non ho avuto tempo -->
+
         <div class="row justify-content-center">
           <div
             class="
@@ -355,6 +360,7 @@
             </div>
           </div>
         </div>
+        <!-- Row per i clienti -->
         <div id="customers" class="row">
           <div class="col">
             <img src="../assets/img/client-1-1.png" alt="Golden Golden" />
@@ -375,6 +381,7 @@
       </div>
     </section>
     <section id="subscription">
+      <!-- Poteva essere un componente -->
       <div class="container">
         <div
           class="

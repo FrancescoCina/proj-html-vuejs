@@ -1,3 +1,6 @@
+
+// Colori con linear-gradient
+
 .gradient-blue {
     background: rgb(26, 178, 237);
     background: linear-gradient(
@@ -19,15 +22,17 @@
     color: #fff;
   }
 
+//   ------------------------------
+// Colore Sfondo pulsanti bianchi
+
   button.white-back {
     background-color: #fff;
     color: #fa7178;
   }
 
+//   ---------------------------
 
-
-
-// Effetti hover per pulsanti "Try it Now" "Explore More"
+// Classi CSS per buttons
 
 .try:hover {
     background: rgb(26, 178, 237);
@@ -51,8 +56,15 @@
     color: #fff;
   }
 
+  .button-box-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.clickable{
+    cursor: pointer;
+}
 
+// -------------------
 
 //  LAYOVER FOR MAIN POST IN SECTION LATEST POSTS
   .layover{
