@@ -253,70 +253,7 @@
           </div>
         </div>
         <!-- Row for price details -->
-        <div class="row justify-content-center card-price">
-          <div class="col-3 position-relative">
-            <div class="card text-center p-5">
-              <p class="price-background">40</p>
-              <h3><strong>Designing</strong></h3>
-              <p>PROCESS</p>
-              <p>$</p>
-              <p class="h1">40</p>
-              <p>Per Month</p>
-              <p><strong>Creative</strong> Design Enabled</p>
-              <p><strong>Vibrant </strong>Color Usage</p>
-              <p><strong>Eye</strong> Catching Design</p>
-              <p><strong>Extreme </strong>Typography</p>
-              <p><strong>Exceptional</strong> Design</p>
-              <div class="btn-container d-flex justify-content-center mt-4">
-                <button type="button" class="btn pink-button">
-                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 position-relative">
-            <div class="card pink-card white text-center p-5">
-              <p class="price-background">60</p>
-
-              <h3><strong>Developing</strong></h3>
-              <p>PRODUCT</p>
-              <p>$</p>
-              <p class="h1">60</p>
-              <p>Per Month</p>
-              <p><strong>Creative</strong> Design Enabled</p>
-              <p><strong>Vibrant </strong>Color Usage</p>
-              <p><strong>Eye</strong> Catching Design</p>
-              <p><strong>Extreme </strong>Typography</p>
-              <p><strong>Exceptional</strong> Design</p>
-              <div class="btn-container d-flex justify-content-center mt-4">
-                <button type="button" class="btn white-back">
-                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 position-relative">
-            <div class="card text-center p-5">
-              <p class="price-background">80</p>
-
-              <h3><strong>Supporting</strong></h3>
-              <p>CLIENTS</p>
-              <p>$</p>
-              <p class="h1">80</p>
-              <p>Per Month</p>
-              <p><strong>Creative</strong> Design Enabled</p>
-              <p><strong>Vibrant </strong>Color Usage</p>
-              <p><strong>Eye</strong> Catching Design</p>
-              <p><strong>Extreme </strong>Typography</p>
-              <p><strong>Exceptional</strong> Design</p>
-              <div class="btn-container d-flex justify-content-center mt-4">
-                <button type="button" class="btn pink-button">
-                  Order Now <i class="fas fa-long-arrow-alt-right ms-3"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CardPrice :pricingInfos="pricingInfos"></CardPrice>
       </div>
     </section>
     <!-- SEZIONE LATEST POSTS -->
@@ -336,7 +273,7 @@
               <div class="article-preview">
                 <div class="post-details my-2">
                   <time>April 21, 2019</time>
-                  <span> &bull; <author>By Paul</author></span>
+                  <span> &bull; <span>By Paul</span></span>
                 </div>
                 <h5 class="my-2">
                   Amazon gets CCI not to acquire 49% stake in
@@ -355,7 +292,7 @@
           <div class="col-3 secondary-post p-4 h-350">
             <div class="post-details my-5">
               <time>April 21, 2019</time>
-              <span> &bull; <author>By Paul</author></span>
+              <span> &bull; <span>By Paul</span></span>
             </div>
             <h5 class="my-5">
               Clearting Corporations get SEBI not to invest in overnight funds
@@ -369,7 +306,7 @@
           <div class="col-3 secondary-post p-4 h-350">
             <div class="post-details my-5">
               <time>April 21, 2019</time>
-              <span> &bull; <author>By Paul</author></span>
+              <span> &bull; <span>By Paul</span></span>
             </div>
             <h5 class="my-5">
               Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away
@@ -434,7 +371,7 @@
                 meridian sun strikes the upper impenetrable follage of my trees,
                 and but a thousand.
               </p>
-              <author class="fw-bold my-3">Michkel Anegl</author>
+              <span class="fw-bold my-3">Michkel Anegl</span>
               <p>Marketing Management</p>
             </div>
           </div>
@@ -470,7 +407,7 @@
                 meridian sun strikes the upper impenetrable follage of my trees,
                 and but a thousand.
               </p>
-              <author class="fw-bold my-3">Michkel Anegl</author>
+              <span class="fw-bold my-3">Michkel Anegl</span>
               <p>Marketing Management</p>
             </div>
           </div>
@@ -505,7 +442,7 @@
                 meridian sun strikes the upper impenetrable follage of my trees,
                 and but a thousand.
               </p>
-              <author class="fw-bold my-3">Michkel Anegl</author>
+              <span class="fw-bold my-3">Michkel Anegl</span>
               <p>Marketing Management</p>
             </div>
           </div>
@@ -561,8 +498,12 @@
 </template>
 
 <script>
+import CardPrice from "@/components/CardPrice.vue";
+
 export default {
   name: "Main",
+  components: { CardPrice },
+  props: ["pricingInfos"],
 };
 </script>
 <style scoped lang="scss">
@@ -674,52 +615,6 @@ export default {
 
 .pink-p {
   color: #fa7178;
-}
-
-#our-pricing .card {
-  height: 450px;
-  border-radius: 20px;
-  border-color: transparent;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-#our-pricing button {
-  width: 140px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-button.pink-button {
-  background: rgb(191, 44, 110);
-  background: linear-gradient(
-    180deg,
-    rgba(191, 44, 110, 1) 0%,
-    rgba(244, 90, 103, 1) 95%
-  );
-  border-color: transparent;
-}
-
-#our-pricing button.white-back {
-  background-color: #fff;
-  color: #fa7178;
-}
-
-.pink-card {
-  background: rgb(191, 44, 110);
-  background: linear-gradient(
-    170deg,
-    rgba(191, 44, 110, 1) 0%,
-    rgba(244, 90, 103, 1) 95%
-  );
-}
-
-.price-background {
-  position: absolute;
-  top: -78px;
-  left: 117px;
-  color: rgba(0, 0, 0, 0.08);
-  font-size: 200px;
-  font-weight: bold;
 }
 
 //  Sezione Latest Posts

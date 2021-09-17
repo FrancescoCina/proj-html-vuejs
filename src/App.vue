@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :links="links"></Header>
-    <Main></Main>
+    <Main :pricingInfos="pricingInfos"></Main>
     <Footer :links="links"></Footer>
   </div>
 </template>
@@ -44,6 +44,44 @@ export default {
         {
           name: "Portfolio",
           url: "#",
+        },
+      ],
+      pricingInfos: [
+        {
+          service: "Designing",
+          forWho: "PROCESS",
+          price: 40,
+          detailOne: "Creative Design Enabled",
+          detailTwo: "Vibrant Color Usage",
+          detailThree: "Eye Catching Design",
+          detailFour: "Extreme Typography",
+          detailFive: "Exceptional Design",
+          backgroundClass: "",
+          backgroundButton: "pink-button",
+        },
+        {
+          service: "Developing",
+          forWho: "PRODUCT",
+          price: 60,
+          detailOne: "Creative Design Enabled",
+          detailTwo: "Vibrant Color Usage",
+          detailThree: "Eye Catching Design",
+          detailFour: "Extreme Typography",
+          detailFive: "Exceptional Design",
+          backgroundClass: "pink-card",
+          backgroundButton: "white-back",
+        },
+        {
+          service: "Supporting",
+          forWho: "CLIENTS",
+          price: 80,
+          detailOne: "Creative Design Enabled",
+          detailTwo: "Vibrant Color Usage",
+          detailThree: "Eye Catching Design",
+          detailFour: "Extreme Typography",
+          detailFive: "Exceptional Design",
+          backgroundClass: "",
+          backgroundButton: "pink-button",
         },
       ],
     };
