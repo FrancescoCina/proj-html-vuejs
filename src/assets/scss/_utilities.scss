@@ -1,3 +1,6 @@
+
+// Colors
+
 .white{
     color:#fff;
 }
@@ -5,6 +8,8 @@
 .light-grey{
     color:lightslategray;
 }
+
+// Paddings
 
 .pt-10{
     padding-top: 10rem
@@ -14,15 +19,17 @@
     padding:50px;
 }
 
+// -----------------
+
 .button-box-shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 
 .clickable{
     cursor: pointer;
 }
 
+// Dimensions
 
 .h-350{
     height: 350px;
@@ -30,5 +37,11 @@
 
 .w-100p{
     width:100px;
+}
+
+// Font size
+
+.fs-25p{
+    font-size: 25px;
 }
 

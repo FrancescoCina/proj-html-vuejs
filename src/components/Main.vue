@@ -7,7 +7,7 @@
         <div class="row py-5">
           <div class="col-12 text-center">
             <p>Our Services</p>
-            <h3><strong>What</strong> We Do</h3>
+            <h3 class="fs-25p"><strong>What</strong> We Do</h3>
             <p class="py-2">
               When, while the lovely valley teems with vapour around meand the
               meridian sun strikes the upper surface .
@@ -155,7 +155,7 @@
         <div class="row justify-content-between">
           <div class="col-4 section-title mt-4">
             <p class="light-grey">Portfolio</p>
-            <h4><strong>latest</strong> work</h4>
+            <h3 class="fs-25p"><strong>latest</strong> work</h3>
           </div>
           <div
             class="
@@ -324,7 +324,7 @@
       <div class="container">
         <div class="row text-center mb-5">
           <p class="pink-p">Blog</p>
-          <h3><strong>Latest</strong> Posts</h3>
+          <h3 class="fs-25p"><strong>Latest</strong> Posts</h3>
           <p>
             When, while the lovely valley teems with vapour around meand the
             meridian sun strikes the upper surface .
@@ -391,7 +391,7 @@
         <div class="row">
           <div class="col my-5 text-center">
             <p class="pink-p">Testimonial</p>
-            <h3><strong>What</strong> People Say</h3>
+            <h3 class="fs-25p"><strong>What</strong> People Say</h3>
             <p>
               When, while the lovely valley teems with vapour around meand the
               meridian sun strikes the upper surface .
@@ -624,10 +624,10 @@ export default {
 
 // Sezione Latest Work
 #latest-work {
-  height: 650px;
+  height: 750px;
   figcaption {
     height: 40px;
-    padding: 0 8px;
+    padding: 0 15px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
   }
