@@ -16,81 +16,12 @@
         </div>
         <!-- Row for Services -->
         <div class="row align-items-center">
-          <div class="col-3 p-50 text-center">
-            <div class="card-container d-flex flex-column align-items-center">
-              <div class="img-container pb-3">
-                <img
-                  class="img-fluid"
-                  src="@/assets/img/Group-247.png"
-                  alt="Data Analysis"
-                />
-              </div>
-              <h4 class="py-3">Data Analysis</h4>
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper surface .
-              </p>
-              <div class="arrow-button gradient-pink">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 p-50 text-center">
-            <div class="card-container d-flex flex-column align-items-center">
-              <div class="img-container pb-3">
-                <img
-                  class="img-fluid"
-                  src="@/assets/img/Group-567.png"
-                  alt="SEO Optimizazion"
-                />
-              </div>
-              <h4 class="py-3">SEO Optimizazion</h4>
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper surface .
-              </p>
-              <div class="arrow-button gradient-pink">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 p-50 text-center">
-            <div class="card-container d-flex flex-column align-items-center">
-              <div class="img-container pb-3">
-                <img
-                  class="img-fluid"
-                  src="@/assets/img/Group-538.png"
-                  alt="Security Data"
-                />
-              </div>
-              <h4 class="py-3">Security Data</h4>
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper surface .
-              </p>
-              <div class="arrow-button gradient-pink">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 p-50 text-center">
-            <div class="card-container d-flex flex-column align-items-center">
-              <div class="img-container pb-3">
-                <img
-                  class="img-fluid"
-                  src="@/assets/img/Group-566.png"
-                  alt="Branding Strategy"
-                />
-              </div>
-              <h4 class="py-3">Branding Strategy</h4>
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper surface .
-              </p>
-              <div class="arrow-button gradient-pink">
-                <i class="fas fa-arrow-right"></i>
-              </div>
-            </div>
+          <div
+            v-for="(service, index) in services"
+            :key="index"
+            class="col-3 p-50 text-center"
+          >
+            <Services :service="service"></Services>
           </div>
         </div>
         <!-- Row for Button -->
@@ -295,36 +226,6 @@
             :key="index"
             :info="info"
           ></CardArticle>
-
-          <!--   <div class="col-3 secondary-post p-4 h-350">
-            <div class="post-details my-5">
-              <time>April 21, 2019</time>
-              <span> &bull; <span>By Paul</span></span>
-            </div>
-            <h5 class="my-5">
-              Clearting Corporations get SEBI not to invest in overnight funds
-            </h5>
-            <p class="my-5">
-              When, while the lovely valley teems with vapor around me, and the
-              meridiana sun s...
-            </p>
-            <button type="button" class="btn white-back mt-5">Read More</button>
-          </div>
-          <div class="col-3 secondary-post p-4 h-350">
-            <div class="post-details my-5">
-              <time>April 21, 2019</time>
-              <span> &bull; <span>By Paul</span></span>
-            </div>
-            <h5 class="my-5">
-              Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away
-              in London
-            </h5>
-            <p class="my-5">
-              When, while the lovely valley teems with vapor around me, and the
-              meridiana sun s...
-            </p>
-            <button type="button" class="btn white-back mt-5">Read More</button>
-          </div> -->
         </div>
       </div>
     </section>
@@ -507,45 +408,16 @@
 <script>
 import CardPrice from "@/components/CardPrice.vue";
 import CardArticle from "@/components/CardArticle.vue";
+import Services from "@/components/Services.vue";
 
 export default {
   name: "Main",
-  components: { CardPrice, CardArticle },
-  props: ["pricingInfos", "articlesInfos"],
+  components: { CardPrice, CardArticle, Services },
+  props: ["pricingInfos", "articlesInfos", "services"],
 };
 </script>
 <style scoped lang="scss">
 @import "../assets/scss/_vars.scss";
-
-// Sezione What We Do
-
-.card-container:hover {
-  background-color: #08134a;
-  border-radius: 20px;
-  color: white;
-  padding: 10 25px;
-  cursor: pointer;
-  .img-container {
-    background-color: #fff;
-  }
-  .arrow-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-}
-
-.arrow-button {
-  display: none;
-}
-
-#what-we-do .img-container {
-  width: 150px;
-  border-radius: 20px;
-}
 
 //   Sezione Start your Project
 

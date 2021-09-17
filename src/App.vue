@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <Header :links="links"></Header>
-    <Main :pricingInfos="pricingInfos" :articlesInfos="articlesInfos"></Main>
+    <Main
+      :pricingInfos="pricingInfos"
+      :articlesInfos="articlesInfos"
+      :services="services"
+    ></Main>
     <Footer :links="links"></Footer>
   </div>
 </template>
@@ -96,6 +100,28 @@ export default {
           title:
             "Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London",
           text: " When, while the lovely valley teems with vapor around me, and the meridiana sun s...",
+        },
+      ],
+      services: [
+        {
+          url: require("@/assets/img/Group-247.png"),
+          name: "Data Analysis",
+          text: " When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .",
+        },
+        {
+          url: require("@/assets/img/Group-567.png"),
+          name: "SEO Optimizazion",
+          text: " When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .",
+        },
+        {
+          url: require("@/assets/img/Group-538.png"),
+          name: "Security Data",
+          text: " When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .",
+        },
+        {
+          url: require("@/assets/img/Group-566.png"),
+          name: "Branding Strategy",
+          text: " When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .",
         },
       ],
     };
