@@ -105,7 +105,6 @@
         </div>
       </div>
       <!-- Row for Slider -->
-
       <div class="row justify-content-center m-3">
         <div
           v-for="(workDetail, index) in workDetails"
@@ -202,7 +201,7 @@
           </div>
         </div>
         <!-- Row per le immagini e recensioni delle persone -->
-        <!-- Avrei potuto gestire anche questa sezione con componenti, ma ho prediletto la sezione dello slider poichè in questa effettivamente cambiano solo gli url delle immagini -->
+        <!-- Avrei potuto gestire anche questa sezione con componenti, ma ho preferito "scompattare" a componenti la sezione dello slider poichè in questa effettivamente cambiano solo gli url delle immagini -->
 
         <div class="row justify-content-center">
           <div
