@@ -187,7 +187,7 @@
             <figcaption
               class="d-flex justify-content-between align-items-center"
             >
-              <span class="caption">Purinky Products</span>
+              <span class="caption fw-bold">Purinky Products</span>
               <span class="light-grey caption">Digital Experience</span>
             </figcaption>
           </div>
@@ -204,7 +204,7 @@
             <figcaption
               class="d-flex justify-content-between align-items-center"
             >
-              <span class="caption">Basket of Flower on Table</span>
+              <span class="caption fw-bold">Basket of Flower on Table</span>
               <span class="light-grey caption">Branding Strategy</span>
             </figcaption>
           </div>
@@ -221,7 +221,7 @@
             <figcaption
               class="d-flex justify-content-between align-items-center"
             >
-              <span class="caption">Satisfy Poster</span>
+              <span class="caption fw-bold">Satisfy Poster</span>
               <span class="light-grey caption">Branding Strategy</span>
             </figcaption>
           </div>
@@ -230,11 +230,11 @@
       <!-- Row for dots controllers -->
       <div class="row justify-content-center my-4">
         <div class="col d-flex justify-content-center">
-          <div class="dot dot-active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+          <div class="dot dot-active clickable"></div>
+          <div class="dot clickable"></div>
+          <div class="dot clickable"></div>
+          <div class="dot clickable"></div>
+          <div class="dot clickable"></div>
         </div>
       </div>
     </section>
@@ -399,7 +399,16 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-3 px-5">
+          <div
+            class="
+              col-3
+              d-flex
+              flex-column
+              align-items-center
+              position-relative
+              px-5
+            "
+          >
             <div
               class="first people-img-container d-flex justify-content-center"
             >
@@ -411,6 +420,7 @@
                 People
               />
             </div>
+            <p class="quotations-background">&bdquo;</p>
             <div class="stars my-5">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -428,7 +438,16 @@
               <p>Marketing Management</p>
             </div>
           </div>
-          <div class="col-3 mx-3">
+          <div
+            class="
+              col-3
+              d-flex
+              flex-column
+              align-items-center
+              position-relative
+              mx-3
+            "
+          >
             <div class="second people-img-container">
               <img
                 class="img-fluid"
@@ -436,6 +455,8 @@
                 alt="Second Person"
               />
             </div>
+            <p class="quotations-background">&bdquo;</p>
+
             <div class="stars my-5">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -453,7 +474,15 @@
               <p>Marketing Management</p>
             </div>
           </div>
-          <div class="col-3">
+          <div
+            class="
+              col-3
+              d-flex
+              flex-column
+              align-items-center
+              position-relative
+            "
+          >
             <div class="third people-img-container">
               <img
                 class="img-fluid"
@@ -461,6 +490,8 @@
                 alt="Third Person"
               />
             </div>
+            <p class="quotations-background">&bdquo;</p>
+
             <div class="stars my-5">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -619,15 +650,15 @@ export default {
 }
 
 .dot {
-  width: 7px;
-  height: 7px;
-  margin: 3px;
-  background-color: $light-grey;
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  background-color: #e5e5ea;
   border-radius: 50%;
 }
 
 .dot-active {
-  background-color: $section-background;
+  background-color: #db476c;
 }
 
 .caption {
@@ -684,9 +715,9 @@ button.pink-button {
 
 .price-background {
   position: absolute;
-  top: -93px;
-  left: 115px;
-  color: rgba(0, 0, 0, 0.1);
+  top: -78px;
+  left: 117px;
+  color: rgba(0, 0, 0, 0.08);
   font-size: 200px;
   font-weight: bold;
 }
@@ -712,6 +743,17 @@ button.pink-button {
 .secondary-post {
   border-radius: 20px;
   background-color: $section-background;
+}
+
+// Sezione What People Say
+
+.quotations-background {
+  position: absolute;
+  top: -45px;
+  left: 125px;
+  color: rgba(0, 0, 0, 0.08);
+  font-size: 200px;
+  font-weight: bold;
 }
 
 .people-img-container {
