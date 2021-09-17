@@ -259,6 +259,7 @@
     <!-- SEZIONE LATEST POSTS -->
     <section id="latest-posts">
       <div class="container">
+        <!-- Row For Title Section -->
         <div class="row text-center mb-5">
           <p class="pink-p">Blog</p>
           <h3 class="fs-25p"><strong>Latest</strong> Posts</h3>
@@ -289,7 +290,13 @@
             </div>
           </div>
 
-          <div class="col-3 secondary-post p-4 h-350">
+          <CardArticle
+            v-for="(info, index) in articlesInfos"
+            :key="index"
+            :info="info"
+          ></CardArticle>
+
+          <!--   <div class="col-3 secondary-post p-4 h-350">
             <div class="post-details my-5">
               <time>April 21, 2019</time>
               <span> &bull; <span>By Paul</span></span>
@@ -317,7 +324,7 @@
               meridiana sun s...
             </p>
             <button type="button" class="btn white-back mt-5">Read More</button>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -499,11 +506,12 @@
 
 <script>
 import CardPrice from "@/components/CardPrice.vue";
+import CardArticle from "@/components/CardArticle.vue";
 
 export default {
   name: "Main",
-  components: { CardPrice },
-  props: ["pricingInfos"],
+  components: { CardPrice, CardArticle },
+  props: ["pricingInfos", "articlesInfos"],
 };
 </script>
 <style scoped lang="scss">
@@ -626,6 +634,9 @@ export default {
     border-radius: 10px;
     color: #000;
   }
+  &:hover {
+    border: 2px solid $section-background;
+  }
 }
 
 .main-post {
@@ -633,11 +644,6 @@ export default {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-}
-
-.secondary-post {
-  border-radius: 20px;
-  background-color: $section-background;
 }
 
 // Sezione What People Say

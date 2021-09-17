@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :links="links"></Header>
-    <Main :pricingInfos="pricingInfos"></Main>
+    <Main :pricingInfos="pricingInfos" :articlesInfos="articlesInfos"></Main>
     <Footer :links="links"></Footer>
   </div>
 </template>
@@ -82,6 +82,20 @@ export default {
           detailFive: "Exceptional Design",
           backgroundClass: "",
           backgroundButton: "pink-button",
+        },
+      ],
+      articlesInfos: [
+        {
+          time: "April 21,2019",
+          title:
+            "Clearting Corporations get SEBI not to invest in overnight funds",
+          text: " When, while the lovely valley teems with vapor around me, and the meridiana sun s...",
+        },
+        {
+          time: "April 21,2019",
+          title:
+            "Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London",
+          text: " When, while the lovely valley teems with vapor around me, and the meridiana sun s...",
         },
       ],
     };
