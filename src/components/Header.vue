@@ -36,10 +36,10 @@
               meridian sun strikes the upper surface .
             </p>
             <div class="jumbo-buttons py-3">
-              <button class="mx-3 gradient-pink btn" type="button">
+              <button class="mx-3 gradient-pink btn try" type="button">
                 Try It Now
               </button>
-              <button class="mx-3 gradient-blue btn" type="button">
+              <button class="mx-3 gradient-blue btn explore" type="button">
                 Explore More
               </button>
             </div>

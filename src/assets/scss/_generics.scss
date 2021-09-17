@@ -19,6 +19,33 @@
     color: #fff;
   }
 
+// Effetti hover per pulsanti "Try it Now" "Explore More"
+
+.try:hover {
+    background: rgb(26, 178, 237);
+    background: linear-gradient(
+      90deg,
+      rgba(26, 178, 237, 1) 0%,
+      rgba(30, 64, 132, 1) 95%
+    );
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+   .explore:hover {
+    background: rgb(191, 44, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(191, 44, 110, 1) 0%,
+      rgba(244, 90, 103, 1) 95%
+    );
+    border-radius: 10px;
+    color: #fff;
+  }
+
+
+
+
 //  LAYOVER FOR MAIN POST IN SECTION LATEST POSTS
   .layover{
     background-color: rgba(0,0,0,0.2);

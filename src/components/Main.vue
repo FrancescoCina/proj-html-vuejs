@@ -137,10 +137,10 @@
               sanctuary
             </p>
             <div class="jumbo-buttons py-3">
-              <button class="mx-3 gradient-pink btn" type="button">
+              <button class="mx-3 gradient-pink btn try" type="button">
                 Try It Now
               </button>
-              <button class="mx-3 gradient-blue btn" type="button">
+              <button class="mx-3 gradient-blue btn explore" type="button">
                 Explore More
               </button>
             </div>
@@ -167,51 +167,64 @@
               justify-content-end
             "
           >
-            <i class="fs-3 fas fa-arrow-circle-left me-3"></i>
-            <i class="fs-3 fas fa-arrow-circle-right"></i>
+            <!-- Utilizzate queste frecce perchè quelle della traccia erano a pagamento su Font Awesome -->
+            <i class="fs-3 fas fa-arrow-circle-left me-3 clickable"></i>
+            <i class="fs-3 fas fa-arrow-circle-right clickable"></i>
           </div>
         </div>
       </div>
       <!-- Row for Slider -->
       <div class="row justify-content-center m-3">
-        <div class="col-4">
-          <figure class="img-slider">
-            <img
-              class="img-fluid"
-              src="@/assets/img/DRY-1-790x576.jpg"
-              alt="Dry Slider"
-            />
-          </figure>
-          <figcaption class="d-flex justify-content-between">
-            <span class="caption">Purinky Products</span>
-            <span class="light-grey caption">Digital Experience</span>
-          </figcaption>
+        <div class="col-4 clickable">
+          <div class="sliders-elements-container h-100">
+            <div class="img-slider">
+              <img
+                class="img-fluid"
+                src="@/assets/img/DRY-1-790x576.jpg"
+                alt="Dry Slider"
+              />
+            </div>
+            <figcaption
+              class="d-flex justify-content-between align-items-center"
+            >
+              <span class="caption">Purinky Products</span>
+              <span class="light-grey caption">Digital Experience</span>
+            </figcaption>
+          </div>
         </div>
-        <div class="col-4">
-          <figure class="img-slider">
-            <img
-              class="img-fluid"
-              src="@/assets/img/8wa60okr-1-790x576.jpg"
-              alt="Dry Slider"
-            />
-          </figure>
-          <figcaption class="d-flex justify-content-between">
-            <span class="caption">Basket of Flower on Table</span>
-            <span class="light-grey caption">Branding Strategy</span>
-          </figcaption>
+        <div class="col-4 clickable">
+          <div class="sliders-elements-container h-100">
+            <div class="img-slider">
+              <img
+                class="img-fluid"
+                src="@/assets/img/8wa60okr-1-790x576.jpg"
+                alt="Dry Slider"
+              />
+            </div>
+            <figcaption
+              class="d-flex justify-content-between align-items-center"
+            >
+              <span class="caption">Basket of Flower on Table</span>
+              <span class="light-grey caption">Branding Strategy</span>
+            </figcaption>
+          </div>
         </div>
-        <div class="col-4">
-          <figure class="img-slider">
-            <img
-              class="img-fluid"
-              src="@/assets/img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"
-              alt="Dry Slider"
-            />
-          </figure>
-          <figcaption class="d-flex justify-content-between">
-            <span class="caption">Satisfy Poster</span>
-            <span class="light-grey caption">Branding Strategy</span>
-          </figcaption>
+        <div class="col-4 clickable">
+          <div class="sliders-elements-container h-100">
+            <div class="img-slider">
+              <img
+                class="img-fluid"
+                src="@/assets/img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"
+                alt="Dry Slider"
+              />
+            </div>
+            <figcaption
+              class="d-flex justify-content-between align-items-center"
+            >
+              <span class="caption">Satisfy Poster</span>
+              <span class="light-grey caption">Branding Strategy</span>
+            </figcaption>
+          </div>
         </div>
       </div>
       <!-- Row for dots controllers -->
@@ -576,10 +589,28 @@ export default {
 // Sezione Latest Work
 #latest-work {
   height: 650px;
+  figcaption {
+    height: 40px;
+    padding: 0 8px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
 }
 
-.img-slider {
-  border-radius: 15px;
+#latest-work .sliders-elements-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#latest-work .col-4:hover figcaption {
+  background: rgb(191, 44, 110);
+  background: linear-gradient(
+    90deg,
+    rgba(191, 44, 110, 1) 0%,
+    rgba(244, 90, 103, 1) 95%
+  );
+  color: #fff;
 }
 
 .dot {

@@ -89,7 +89,7 @@ export default {
 @import "../assets/scss/_vars.scss";
 footer {
   background-color: #08134a;
-  height: 800px;
+  height: 500px;
   hr {
     color: $light-grey;
   }
