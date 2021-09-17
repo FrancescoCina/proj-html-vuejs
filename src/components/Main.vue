@@ -105,58 +105,14 @@
         </div>
       </div>
       <!-- Row for Slider -->
-      <!-- Avrei potuto gestire anche questa sezione con componenti, ma non ho avuto tempo -->
+
       <div class="row justify-content-center m-3">
-        <div class="col-4 clickable">
-          <div class="sliders-elements-container h-100">
-            <div class="img-slider">
-              <img
-                class="img-fluid"
-                src="@/assets/img/DRY-1-790x576.jpg"
-                alt="Dry Slider"
-              />
-            </div>
-            <figcaption
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span class="caption fw-bold">Purinky Products</span>
-              <span class="light-grey caption">Digital Experience</span>
-            </figcaption>
-          </div>
-        </div>
-        <div class="col-4 clickable">
-          <div class="sliders-elements-container h-100">
-            <div class="img-slider">
-              <img
-                class="img-fluid"
-                src="@/assets/img/8wa60okr-1-790x576.jpg"
-                alt="Dry Slider"
-              />
-            </div>
-            <figcaption
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span class="caption fw-bold">Basket of Flower on Table</span>
-              <span class="light-grey caption">Branding Strategy</span>
-            </figcaption>
-          </div>
-        </div>
-        <div class="col-4 clickable">
-          <div class="sliders-elements-container h-100">
-            <div class="img-slider">
-              <img
-                class="img-fluid"
-                src="@/assets/img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"
-                alt="Dry Slider"
-              />
-            </div>
-            <figcaption
-              class="d-flex justify-content-between align-items-center"
-            >
-              <span class="caption fw-bold">Satisfy Poster</span>
-              <span class="light-grey caption">Branding Strategy</span>
-            </figcaption>
-          </div>
+        <div
+          v-for="(workDetail, index) in workDetails"
+          :key="index"
+          class="col-4 clickable"
+        >
+          <Work :workDetail="workDetail"></Work>
         </div>
       </div>
       <!-- Row for dots controllers -->
@@ -246,7 +202,7 @@
           </div>
         </div>
         <!-- Row per le immagini e recensioni delle persone -->
-        <!-- Avrei potuto gestire anche questa sezione con componenti, ma non ho avuto tempo -->
+        <!-- Avrei potuto gestire anche questa sezione con componenti, ma ho prediletto la sezione dello slider poichè in questa effettivamente cambiano solo gli url delle immagini -->
 
         <div class="row justify-content-center">
           <div
@@ -416,11 +372,12 @@
 import CardPrice from "@/components/CardPrice.vue";
 import CardArticle from "@/components/CardArticle.vue";
 import Services from "@/components/Services.vue";
+import Work from "@/components/Work.vue";
 
 export default {
   name: "Main",
-  components: { CardPrice, CardArticle, Services },
-  props: ["pricingInfos", "articlesInfos", "services"],
+  components: { CardPrice, CardArticle, Services, Work },
+  props: ["pricingInfos", "articlesInfos", "services", "workDetails"],
 };
 </script>
 <style scoped lang="scss">
@@ -453,28 +410,6 @@ export default {
 // Sezione Latest Work
 #latest-work {
   height: 750px;
-  figcaption {
-    height: 40px;
-    padding: 0 15px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-  }
-}
-
-#latest-work .sliders-elements-container {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-#latest-work .col-4:hover figcaption {
-  background: rgb(191, 44, 110);
-  background: linear-gradient(
-    90deg,
-    rgba(191, 44, 110, 1) 0%,
-    rgba(244, 90, 103, 1) 95%
-  );
-  color: #fff;
 }
 
 .dot {
@@ -487,10 +422,6 @@ export default {
 
 .dot-active {
   background-color: #db476c;
-}
-
-.caption {
-  font-size: 10px;
 }
 
 // Sezione Our Pricing
