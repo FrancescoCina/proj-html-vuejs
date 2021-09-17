@@ -254,8 +254,9 @@
         </div>
         <!-- Row for price details -->
         <div class="row justify-content-center card-price">
-          <div class="col-3">
+          <div class="col-3 position-relative">
             <div class="card text-center p-5">
+              <p class="price-background">40</p>
               <h3><strong>Designing</strong></h3>
               <p>PROCESS</p>
               <p>$</p>
@@ -273,8 +274,10 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 position-relative">
             <div class="card pink-card white text-center p-5">
+              <p class="price-background">60</p>
+
               <h3><strong>Developing</strong></h3>
               <p>PRODUCT</p>
               <p>$</p>
@@ -292,8 +295,10 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-3 position-relative">
             <div class="card text-center p-5">
+              <p class="price-background">80</p>
+
               <h3><strong>Supporting</strong></h3>
               <p>CLIENTS</p>
               <p>$</p>
@@ -675,6 +680,15 @@ button.pink-button {
     rgba(191, 44, 110, 1) 0%,
     rgba(244, 90, 103, 1) 95%
   );
+}
+
+.price-background {
+  position: absolute;
+  top: -93px;
+  left: 115px;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 200px;
+  font-weight: bold;
 }
 
 //  Sezione Latest Posts
